@@ -1,0 +1,23 @@
+[
+    {
+        "name": "Capitals Quiz Game",
+        "live": "https://yilmaz1998.github.io/Project-1/",
+        "github": "https://github.com/yilmaz1998/Project-1"
+    },
+    {
+        "name": "MovieGram",
+        "live": "https://moviegram-86d43202f567.herokuapp.com/session/new",
+        "github": "https://github.com/yilmaz1998/Project-2-MovieGram"
+    },
+    {
+        "name": "Order-Eatz (Group Project)",
+        "live": "https://order-eatz.netlify.app/",
+        "github": "https://github.com/psantos2107/order-eatz-frontend"
+    },
+    {
+        "name": "LiquidLounge",
+        "live": "https://liquid-lounge.netlify.app/",
+        "github": "https://github.com/yilmaz1998/LiquidLounge-frontend"
+    }
+]
+  
