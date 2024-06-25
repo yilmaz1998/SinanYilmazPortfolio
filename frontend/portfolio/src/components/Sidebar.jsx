@@ -19,10 +19,11 @@ const Sidebar = () => {
       </button>
       <div className={`sidebar-content ${showSidebar ? 'show' : ''}`}>
         <ul>
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/about">About Me</Link></li>
-          <li><Link to="/projects">My Projects</Link></li>
-          <li><Link to="/contact">Contact Me</Link></li>
+          <li><Link onClick={toggleSidebar} to="/">Home</Link></li>
+          <li><Link onClick={toggleSidebar} to="/about">About Me</Link></li>
+          <li><Link onClick={toggleSidebar} to="/projects">My Projects</Link></li>
+          <li><Link onClick={toggleSidebar} to="/skills">My Skills</Link></li>
+          <li><Link onClick={toggleSidebar} to="/contact">Contact Me</Link></li>
         </ul>
       </div>
     </div>
