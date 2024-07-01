@@ -6,7 +6,7 @@ const Contact = () => {
 
 
   useEffect(() => {
-    fetch(`http://localhost:3000/contact`, {
+    fetch(`https://sinanportfolio-e71d315454ee.herokuapp.com/contact`, {
       headers: {
         'Content-Type': 'application/json'
       },
