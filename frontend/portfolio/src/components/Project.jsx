@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { motion } from 'framer-motion';
 
 const Project = () => {
   const [projects, setProjects] = useState(null)
@@ -24,15 +25,28 @@ const Project = () => {
   const loaded = () => {
     return (
       <div>
-        <h1 className="text-5xl text-center mt-10 text-white mb-8">My Projects</h1>
-        {projects.map((item, index) => (
-          <div className='project text-white m-12 p-4 border rounded-lg shadow-lg' key={index}>
+        <motion.h1
+        initial={{ opacity: 0, y: -50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        className="text-5xl text-white text-center mt-16 mb-8"
+      >
+        My Projects
+      </motion.h1>
+      {projects.map((item, index) => (
+          <motion.div
+            key={index}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.8 }}
+            className="project text-white m-12 p-4 border rounded-lg shadow-lg"
+          >
             <h2 className="text-2xl font-bold mb-4">{item.name}</h2>
             <div className="flex justify-center space-x-4">
               <a className="text-blue-500 hover:text-blue-700" href={item.github}>Github Link</a>
-              <a className="text-blue-500 hover:text-blue-700" href={item.live}>Live</a>
+              {item.live && <a className="text-blue-500 hover:text-blue-700" href={item.live}>Live</a>}
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     );

@@ -4,10 +4,6 @@
 
 body {
     background-color: black;
-    background-image: url('./assets/abstract-black-lines-geometric-background_677411-2748.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
 .sidebar-toggle-btn {
@@ -77,4 +73,13 @@ body {
   border: 2px solid mintcream;
   border-radius: 25px;
   margin-left: 30px;
+}
+
+@media only screen and (max-width: 500px) {
+  .picture {
+    width: 50%;
+  }
+  .sidebar-content {
+    width: 40%;
+  }
 }

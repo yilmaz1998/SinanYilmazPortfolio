@@ -1,4 +1,6 @@
 import { useState, useEffect } from 'react'
+import { motion } from 'framer-motion';
+import '../styles.css'
 
 const Contact = () => {
   const [contact, setContact] = useState(null)
@@ -22,14 +24,30 @@ const Contact = () => {
   }, [])
 
   const loaded = () => (
-    <div className='flex flex-col items-center justify-center h-screen text-white contact'>
-    <h1 className='text-5xl mb-4'>Contact Me</h1>
-    <div>
-    <a className='text-blue-500 hover:text-blue-700' href={`mailto:${contact.email}`}>Mail Me</a>
-    <a className="text-blue-500 hover:text-blue-700 ml-4" href={contact.github}>Github</a>
-    <a className="text-blue-500 hover:text-blue-700 ml-4" href={contact.linkedin}>LinkedIn</a>
-    </div>
-    </div>
+    <motion.div 
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    transition={{ duration: 0.8 }}
+    className='flex flex-col items-center justify-center h-screen text-white background'
+  >
+    <motion.h1 
+      initial={{ y: -50, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.5, delay: 0.8 }}
+      className='text-5xl mb-4'
+    >
+      Contact Me
+    </motion.h1>
+    <motion.div 
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.5, delay: 0.8 }}
+    >
+      <a className='text-blue-500 hover:text-blue-700' href={`mailto:${contact.email}`}>Mail Me</a>
+      <a className="text-blue-500 hover:text-blue-700 ml-4" href={contact.github}>Github</a>
+      <a className="text-blue-500 hover:text-blue-700 ml-4" href={contact.linkedin}>LinkedIn</a>
+    </motion.div>
+  </motion.div>
   )
 
   return contact ? loaded() : <h1>Loading...</h1>
