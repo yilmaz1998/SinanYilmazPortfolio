@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion';
-import '../styles.css'
 
 const Contact = () => {
   const [contact, setContact] = useState(null)
