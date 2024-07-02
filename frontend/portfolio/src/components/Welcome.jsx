@@ -25,6 +25,15 @@ const Welcome = () => {
       >
         Software Developer
       </motion.h1>
+      <motion.a
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.5, delay: 1 }}
+        href="https://olive-sydney-94.tiiny.site/"
+        className="text-xl mt-6 text-blue-500 hover:text-blue-700"
+      >
+        View Resume
+      </motion.a>
     </motion.div>
   )
 }
