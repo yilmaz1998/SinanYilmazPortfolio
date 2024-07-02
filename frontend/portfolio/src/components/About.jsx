@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion';
+import profilePicture from '../assets/71781841581__860736E2-D137-4916-A843-057F800F01A0.jpeg'
 
 const About = () => {
   const [about, setAbout] = useState(null)
@@ -30,7 +31,7 @@ const About = () => {
       className='flex justify-center m-8'
   >
   <div className='about text-white p-6 rounded-lg shadow-lg text-center'>
-    <img className='picture w-1/6 mx-auto rounded-full mb-4' src="/src/assets/71781841581__860736E2-D137-4916-A843-057F800F01A0.jpeg" alt="Profile Picture"/>
+    <img className='picture w-1/6 mx-auto rounded-full mb-4' src={profilePicture} alt="Profile Picture"/>
     <h1 className='text-5xl mb-2'>About Me</h1>
     <div className='text-left'>
       <h2 className='text-lg font-bold mt-4'>Name:</h2>
