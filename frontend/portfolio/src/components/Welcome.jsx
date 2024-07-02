@@ -1,5 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import Resume from '../assets/Sinan Yilmaz Resume.pdf'
 
 const Welcome = () => {
   return (
@@ -29,7 +30,7 @@ const Welcome = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5, delay: 1 }}
-        href="https://olive-sydney-94.tiiny.site/"
+        href={Resume}
         className="text-xl mt-6 text-blue-500 hover:text-blue-700"
       >
         View Resume
