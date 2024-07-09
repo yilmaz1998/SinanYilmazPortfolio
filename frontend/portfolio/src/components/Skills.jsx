@@ -21,8 +21,8 @@ const Skills = () => {
     <p className='text-lg mb-2'><span className='font-bold'>Languages:</span> JavaScript, Python, HTML, CSS</p>
     <p className='text-lg mb-2'><span className='font-bold'>Frontend Libraries:</span> React, Tailwind CSS</p>
     <p className='text-lg mb-2'><span className='font-bold'>Backend Libraries:</span> Node.js, Express.js, Embedded JavaScript, Django</p>
-    <p className='text-lg mb-2'><span className='font-bold'>Database:</span> MongoDB, PostgreSQL</p>
-    <p className='text-lg mb-2'><span className='font-bold'>Authentication:</span> JSON Web Token, Express-sessions</p>
+    <p className='text-lg mb-2'><span className='font-bold'>Databases and Other:</span> MongoDB, PostgreSQL, RESTful Routing, JSON API</p>
+    <p className='text-lg mb-2'><span className='font-bold'>Authentication:</span> JSON Web Token, Express-Sessions</p>
   </div>
 </motion.div>
   )

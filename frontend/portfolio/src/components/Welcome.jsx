@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import Resume from '../assets/Sinan Yilmaz Resume.pdf'
+import Resume from '../assets/SinanYilmazResume.pdf'
 
 const Welcome = () => {
   return (
@@ -31,7 +31,7 @@ const Welcome = () => {
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5, delay: 1 }}
         href={Resume}
-        className="text-xl mt-6 text-blue-500 hover:text-blue-700"
+        className="text-xl mt-4 text-blue-500 hover:text-blue-700"
       >
         View Resume
       </motion.a>
