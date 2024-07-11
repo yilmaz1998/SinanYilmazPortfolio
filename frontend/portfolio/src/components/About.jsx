@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion';
-import profilePicture from '../assets/71781841581__860736E2-D137-4916-A843-057F800F01A0.jpeg'
 
 const About = () => {
   const [about, setAbout] = useState(null)
@@ -31,7 +30,6 @@ const About = () => {
       className="flex justify-center m-8"
     >
       <div className="about text-white p-6 rounded-lg shadow-lg text-center">
-      <img className='picture w-1/6 mx-auto rounded-full border-4 border-gray-300 mb-4' src={profilePicture} alt="Profile Picture"/> 
         <h1 className='text-5xl mb-2'>About Me</h1>
         <motion.div
           initial={{ opacity: 0 }}
@@ -47,6 +45,19 @@ const About = () => {
           <p className="text-lg">{about.placeofbirth}</p>
           <h2 className="text-lg font-bold mt-4">Bio:</h2>
           <p className="text-lg">{about.bio}</p>
+          <h1 className='text-5xl text-center mt-8 mb-8'>My Skills</h1>
+          <div className='text-left'>
+          <h2 className="text-lg font-bold mt-4">Languages:</h2>
+          <p className='text-lg mb-2'>JavaScript, Python, HTML, CSS</p>
+          <h2 className="text-lg font-bold mt-4">Front-End Libraries:</h2>
+          <p className='text-lg mb-2'>React, Tailwind CSS</p>
+          <h2 className="text-lg font-bold mt-4">Back-End Libraries:</h2>
+          <p className='text-lg mb-2'>Node.js, Express.js, Embedded JavaScript, Django</p>
+          <h2 className="text-lg font-bold mt-4">Databases and others:</h2>
+          <p className='text-lg mb-2'>MongoDB, PostgreSQL, RESTful Routing, JSON API</p>
+          <h2 className="text-lg font-bold mt-4">Authentication:</h2>
+          <p className='text-lg mb-2'>JSON Web Token, Express-Sessions</p>
+          </div>
         </motion.div>
       </div>
     </motion.div>

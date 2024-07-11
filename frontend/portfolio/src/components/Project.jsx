@@ -6,7 +6,7 @@ const Project = () => {
 
 
   useEffect(() => {
-    fetch(`https://sinanportfolio-e71d315454ee.herokuapp.com/projects`, {
+    fetch(`http://localhost:3000/projects`, {
       headers: {
         'Content-Type': 'application/json'
       },
@@ -39,12 +39,18 @@ const Project = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.8 }}
-            className="project text-white m-12 p-4 border rounded-lg shadow-lg"
+            className="project text-white m-14 p-2 border rounded-lg shadow-lg"
           >
             <h2 className="text-2xl font-bold mb-4">{item.name}</h2>
-            <div className="flex justify-center space-x-4">
-              <a className="text-blue-500 hover:text-blue-700" href={item.github}>Github Link</a>
-              {item.live && <a className="text-blue-500 hover:text-blue-700" href={item.live}>Live</a>}
+            <h2 className="mb-4">{item.desc}</h2>
+            <div className='flex'>
+            {item.images.map((image, index) => (
+            <img key={index} src={`/images/${image}`} className='w-1/2 p-2'/>
+            ))}
+            </div>
+            <div className="flex justify-center mt-6 space-x-4">
+              <a className="text-blue-500 text-lg hover:text-blue-700" href={item.github}>Github Link</a>
+              {item.live && <a className="text-blue-500 text-lg hover:text-blue-700" href={item.live}>Live</a>}
             </div>
           </motion.div>
         ))}

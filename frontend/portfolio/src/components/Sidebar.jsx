@@ -22,7 +22,6 @@ const Sidebar = () => {
           <li><Link onClick={toggleSidebar} to="/">Home</Link></li>
           <li><Link onClick={toggleSidebar} to="/about">About Me</Link></li>
           <li><Link onClick={toggleSidebar} to="/projects">My Projects</Link></li>
-          <li><Link onClick={toggleSidebar} to="/skills">My Skills</Link></li>
           <li><Link onClick={toggleSidebar} to="/contact">Contact Me</Link></li>
         </ul>
       </div>

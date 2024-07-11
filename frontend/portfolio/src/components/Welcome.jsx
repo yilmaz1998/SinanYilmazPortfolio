@@ -1,6 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import Resume from '../assets/SinanYilmazResume.pdf'
+import profilePicture from '../assets/IMG_4062 2.jpeg'
 
 const Welcome = () => {
   return (
@@ -10,6 +11,13 @@ const Welcome = () => {
       transition={{ duration: 1 }}
       className="flex flex-col items-center justify-center h-screen background"
     >
+      <motion.img
+      src={profilePicture}
+      initial={{ y: -50, opacity: 0 }}
+      animate={{ y:0, opacity: 1 }}
+      transition={{ duration: 0.5, delay: 0.5}}
+      className="picture w-1/5 rounded-full mb-6"
+      />
       <motion.h1 
         initial={{ y: -50, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
