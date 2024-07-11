@@ -1,9 +1,14 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import { motion } from 'framer-motion'
 import Resume from '../assets/SinanYilmazResume.pdf'
 import profilePicture from '../assets/IMG_4062 2.jpeg'
 
 const Welcome = () => {
+
+  useEffect(() => {
+    document.title = 'Welcome | Sinan Yilmaz'
+  }, [])
+
   return (
     <motion.div 
       initial={{ opacity: 0 }}

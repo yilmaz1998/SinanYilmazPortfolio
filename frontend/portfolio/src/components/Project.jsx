@@ -22,6 +22,10 @@ const Project = () => {
     .catch((error) => console.error('Error fetching data:', error))
   }, [])
 
+  useEffect(() => {
+    document.title = projects ? "Projects | Sinan Yilmaz" : 'Loading...';
+  }, [projects]);
+
   const loaded = () => {
     return (
       <div>
@@ -39,7 +43,7 @@ const Project = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.8 }}
-            className="project text-white m-14 p-2 border rounded-lg shadow-lg"
+            className="project text-white p-4 mx-60 mt-6 mb-8 border rounded-lg shadow-lg"
           >
             <h2 className="text-2xl font-bold mb-4">{item.name}</h2>
             <h2 className="mb-4">{item.desc}</h2>

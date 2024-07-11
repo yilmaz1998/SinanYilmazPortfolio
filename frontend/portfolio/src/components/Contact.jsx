@@ -22,6 +22,10 @@ const Contact = () => {
     .catch((error) => console.error('Error fetching data:', error))
   }, [])
 
+  useEffect(() => {
+    document.title = contact ? "Contact | Sinan Yilmaz" : 'Loading...';
+  }, [contact]);
+
   const loaded = () => (
     <motion.div 
     initial={{ opacity: 0 }}

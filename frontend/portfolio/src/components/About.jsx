@@ -22,15 +22,19 @@ const About = () => {
       .catch((error) => console.error('Error fetching data:', error))
   }, [])
 
+  useEffect(() => {
+    document.title = about ? "About | Sinan Yilmaz" : 'Loading...';
+  }, [about]);
+
   const loaded = () => (
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
-      className="flex justify-center m-8"
+      className="about flex justify-center mx-64"
     >
       <div className="about text-white p-6 rounded-lg shadow-lg text-center">
-        <h1 className='text-5xl mb-2'>About Me</h1>
+        <h1 className='text-5xl mb-10 mt-10'>About Me</h1>
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
