@@ -93,4 +93,10 @@ body {
   .sidebar-content ul li {
     font-size: 20px;
   }
+  .image {
+    width: 100%;
+  }
+  .images {
+    display: block;
+  }
 }

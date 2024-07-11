@@ -43,9 +43,9 @@ const Project = () => {
           >
             <h2 className="text-2xl font-bold mb-4">{item.name}</h2>
             <h2 className="mb-4">{item.desc}</h2>
-            <div className='flex'>
+            <div className='images flex'>
             {item.images.map((image, index) => (
-            <img key={index} src={`/images/${image}`} className='w-1/2 p-2'/>
+            <img key={index} src={`/images/${image}`} className='image w-1/2 p-2'/>
             ))}
             </div>
             <div className="flex justify-center mt-6 space-x-4">
