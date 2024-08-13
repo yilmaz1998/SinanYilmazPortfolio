@@ -6,7 +6,7 @@ const Project = () => {
 
 
   useEffect(() => {
-    fetch(`https://sinanportfolio-e71d315454ee.herokuapp.com/projects`, {
+    fetch(`https://sinanportfolio-cad048501f36.herokuapp.com/projects`, {
       headers: {
         'Content-Type': 'application/json'
       },

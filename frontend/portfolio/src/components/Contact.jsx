@@ -6,7 +6,7 @@ const Contact = () => {
 
 
   useEffect(() => {
-    fetch(`https://sinanportfolio-e71d315454ee.herokuapp.com/contact`, {
+    fetch(`https://sinanportfolio-cad048501f36.herokuapp.com/contact`, {
       headers: {
         'Content-Type': 'application/json'
       },

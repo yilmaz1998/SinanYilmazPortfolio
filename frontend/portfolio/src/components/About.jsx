@@ -6,7 +6,7 @@ const About = () => {
 
 
   useEffect(() => {
-    fetch(`https://sinanportfolio-e71d315454ee.herokuapp.com/about`, {
+    fetch(`https://sinanportfolio-cad048501f36.herokuapp.com/about`, {
       headers: {
         'Content-Type': 'application/json'
       },
@@ -57,8 +57,8 @@ const About = () => {
           <p className='text-lg mb-2'>React, Tailwind CSS, Bootstrap</p>
           <h2 className="text-lg font-bold mt-4">Back-End Libraries:</h2>
           <p className='text-lg mb-2'>Node.js, Express.js, Embedded JavaScript, Django</p>
-          <h2 className="text-lg font-bold mt-4">Databases and others:</h2>
-          <p className='text-lg mb-2'>MongoDB, PostgreSQL, RESTful Routing, JSON API</p>
+          <h2 className="text-lg font-bold mt-4">Databases:</h2>
+          <p className='text-lg mb-2'>MongoDB, PostgreSQL</p>
           <h2 className="text-lg font-bold mt-4">Authentication:</h2>
           <p className='text-lg mb-2'>JSON Web Token, Express-Sessions</p>
           </div>
