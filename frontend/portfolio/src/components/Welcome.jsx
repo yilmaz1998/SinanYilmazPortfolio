@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react'
 import { motion } from 'framer-motion'
-import Resume from '../assets/Sinan_Yilmaz_Resume.pdf'
+import Resume from '../assets/Sinan Yilmaz Resume.pdf'
 import profilePicture from '../assets/Sinan.jpg'
 
 const Welcome = () => {
