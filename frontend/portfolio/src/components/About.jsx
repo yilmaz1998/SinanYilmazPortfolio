@@ -54,13 +54,13 @@ const About = () => {
           <h2 className="text-lg font-bold mt-4">Languages:</h2>
           <p className='text-lg mb-2'>JavaScript, Python, HTML, CSS</p>
           <h2 className="text-lg font-bold mt-4">Front-End Libraries:</h2>
-          <p className='text-lg mb-2'>React, Tailwind CSS, Bootstrap</p>
+          <p className='text-lg mb-2'>React, Next.js, Tailwind CSS, Bootstrap</p>
           <h2 className="text-lg font-bold mt-4">Back-End Libraries:</h2>
           <p className='text-lg mb-2'>Node.js, Express.js, Embedded JavaScript, Django</p>
           <h2 className="text-lg font-bold mt-4">Databases:</h2>
           <p className='text-lg mb-2'>MongoDB, PostgreSQL</p>
           <h2 className="text-lg font-bold mt-4">Authentication:</h2>
-          <p className='text-lg mb-2'>JSON Web Token, Express-Sessions</p>
+          <p className='text-lg mb-2'>JSON Web Token, Express-Sessions, GoogleAuth</p>
           </div>
         </motion.div>
       </div>
