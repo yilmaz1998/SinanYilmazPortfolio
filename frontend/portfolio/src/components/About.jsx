@@ -53,14 +53,14 @@ const About = () => {
           <div className='text-left'>
           <h2 className="text-lg font-bold mt-4">Languages:</h2>
           <p className='text-lg mb-2'>JavaScript, Python, HTML, CSS</p>
-          <h2 className="text-lg font-bold mt-4">Front-End Libraries:</h2>
-          <p className='text-lg mb-2'>React, Next.js, Tailwind CSS, Bootstrap</p>
-          <h2 className="text-lg font-bold mt-4">Back-End Libraries:</h2>
-          <p className='text-lg mb-2'>Node.js, Express.js, Embedded JavaScript, Django</p>
-          <h2 className="text-lg font-bold mt-4">Databases:</h2>
-          <p className='text-lg mb-2'>MongoDB, PostgreSQL</p>
+          <h2 className="text-lg font-bold mt-4">Front-End Libraries & Frameworks:</h2>
+          <p className='text-lg mb-2'>React, Next.js, Tailwind CSS, Bootstrap, Shadcn UI, Material UI</p>
+          <h2 className="text-lg font-bold mt-4">Back-End Libraries & Frameworks:</h2>
+          <p className='text-lg mb-2'>Node.js, Express, Embedded JavaScript (EJS), Django</p>
+          <h2 className="text-lg font-bold mt-4">Databases and Tools:</h2>
+          <p className='text-lg mb-2'>MongoDB, PostgreSQL, Knex.js (SQL Query Builder), Postman, Jest</p>
           <h2 className="text-lg font-bold mt-4">Authentication:</h2>
-          <p className='text-lg mb-2'>JSON Web Token, Express-Sessions, GoogleAuth</p>
+          <p className='text-lg mb-2'>JSON Web Token, Google OAuth, Express-Sessions</p>
           </div>
         </motion.div>
       </div>

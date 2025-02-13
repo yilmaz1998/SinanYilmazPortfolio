@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react'
 import { motion } from 'framer-motion'
-import Resume from '../assets/Sinan Yilmaz Resume.pdf'
+import Resume from '../assets/SinanYilmazResume.pdf'
 import profilePicture from '../assets/Sinan.jpg'
 
 const Welcome = () => {
@@ -27,7 +27,7 @@ const Welcome = () => {
         initial={{ y: -50, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.5 }}
-        className='text-5xl text-white text-center mb-6'
+        className='text-5xl text-white text-center mb-4'
       >
         Sinan Yilmaz
       </motion.h1>
@@ -44,7 +44,7 @@ const Welcome = () => {
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5, delay: 1 }}
         href={Resume}
-        className="text-xl mt-4 text-blue-500 hover:text-blue-700"
+        className="text-xl mt-2 text-blue-500 hover:text-blue-700"
       >
         View Resume
       </motion.a>
